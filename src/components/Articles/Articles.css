@@ -1,0 +1,153 @@
+.articles {
+    padding: 0 10%;
+}
+
+.article {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 300px;
+    max-width: calc((100% - 160px) / 2);
+    margin: 10px;
+    padding: 30px 30px;
+    color: #294A70;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.article .author {
+    float: left;
+}
+
+.article .datetime {
+    float: right;
+}
+
+.article .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.article .text {
+    font-size: 17px;
+    color: black;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 150px;
+}
+
+.article .expand {
+    max-height: none;
+}
+
+.article .expand-button {
+    float: right;
+    margin-top: 8px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: #294A70;
+    cursor: pointer;
+}
+
+.article .images {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.article img {
+    width: calc(100% / 3 - 10px);
+    margin: 5px;
+    float: left;
+}
+
+.more-button {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #294A70;
+    background-color: white;
+    border: 2px solid #294A70;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+
+.more-button:hover {
+    color: #f2f2f2;
+    background-color: #294A70;
+}
+
+@media screen and (max-width: 1000px) {
+    .articles {
+        padding: 0;
+    }
+
+    .article {
+        max-width: 100%;
+    }
+}
+
+.tabs li {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #294A70;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+    z-index: 1;
+}
+
+.tabs li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #294A70;
+    border-bottom: 2px solid #294A70;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: .3s;
+}
+
+.tabs li:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #294A70;
+    transform: scale(0);
+    opacity: 0;
+    transition: .3s;
+    z-index: -1;
+}
+
+.tabs li:hover {
+    color: #f2f2f2;
+}
+
+.tabs li:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.tabs li:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.tabs li.active {
+    border-top: 3px solid #294A70;
+    border-bottom: 3px solid #294A70;
+}

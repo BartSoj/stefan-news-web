@@ -1,0 +1,44 @@
+header {
+    background-color: #294A70;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+header a {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 9px 25px;
+    text-decoration: none;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li a:hover {
+    background-color: #FFAB1F;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+}
+
+header .active {
+    background-color: #cb891c;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+    header li {
+        float: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: auto;
+}

@@ -1,0 +1,121 @@
+.addArticle {
+    margin: 15px auto;
+    width: 50%;
+    padding: 30px;
+    color: #294A70;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.addArticle .author {
+    float: left;
+}
+
+.addArticle .datetime {
+    float: right;
+}
+
+.addArticle .title {
+    width: calc(100% - 160px);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.addArticle .text {
+    width: 100%;
+    height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+    color: black;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.addArticle .images {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.addArticle .image {
+    max-width: calc(100% / 3 - 10px);
+    margin: 5px;
+    float: left;
+}
+
+.addArticle img {
+    width: 100%
+}
+
+.addArticle .delete-image {
+    margin-left: -24.66px;
+    margin-top: 3px;
+    position: absolute;
+    background-color: darkred;
+    padding: 5px;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addArticle .add-image {
+    float: left;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #294A70;
+    cursor: pointer;
+}
+
+.addArticle #add-image {
+    display: none;
+}
+
+.addArticleSubmit {
+    font-size: 18px;
+    margin: 15px auto;
+    width: 50%;
+    text-align: right;
+}
+
+.addArticleSubmit label {
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.addArticleSubmit input {
+    float: left;
+    margin-bottom: 15px;
+    width: 150px;
+    font-size: inherit;
+}
+
+.addArticleSubmit button {
+    font-size: inherit;
+    padding: 10px 20px;
+    color: #294A70;
+    background-color: white;
+    border: 2px solid #294A70;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+
+.addArticleSubmit button:hover {
+    color: #f2f2f2;
+    background-color: green;
+    border-color: green;
+}
+
+@media screen and (max-width: 1000px) {
+    .addArticle {
+        width: calc(100% - 80px);
+    }
+
+    .addArticleSubmit {
+        width: calc(100% - 80px);
+    }
+}

@@ -1,0 +1,50 @@
+.login {
+    background-color: #f2f2f2;
+    margin: 10px auto;
+    width: 415px;
+    padding: 20px 50px;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.login div {
+    margin: 20px 0;
+}
+
+.login input {
+    font-size: inherit;
+}
+
+.login .save {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #294A70;
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+
+.login .save:hover {
+    color: #f2f2f2;
+    background-color: green;
+}
+
+.register {
+    font-size: 16px;
+    font-weight: 600;
+    color: #294A70;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .login {
+        width: calc(100% - 100px);
+    }
+
+    .login input {
+        width: 100%;
+    }
+}

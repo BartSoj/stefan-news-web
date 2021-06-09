@@ -1,0 +1,159 @@
+.authorSettings {
+    background-color: #f2f2f2;
+    margin: 5px 30%;
+    padding: 20px 50px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.authorSettings .label {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.authorSettings .label input {
+    font-size: inherit;
+}
+
+.authorSettings .image {
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.authorSettings .image img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .3s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.authorSettings .imageText {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 500;
+}
+
+.authorSettings .image:hover img {
+    opacity: 0.5;
+}
+
+.authorSettings .image:hover .imageText {
+    opacity: 1;
+}
+
+.authorSettings #imageButton {
+    display: none;
+}
+
+.authorSettings textarea {
+    margin: 10px auto;
+    height: 140px;
+    font-size: 16px;
+    text-align: justify;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.authorSettings .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.authorSettings .switch input {
+    opacity: 0;
+}
+
+.authorSettings .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.authorSettings .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+
+}
+
+.authorSettings input.checked + .slider {
+    background-color: #294A70;
+}
+
+.authorSettings input:focus + .slider {
+    box-shadow: 0 0 1px #294A70;
+}
+
+.authorSettings input.checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.authorSettings .save {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #294A70;
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+
+.authorSettings .save:hover {
+    color: #f2f2f2;
+    background-color: green;
+}
+
+@media screen and (max-width: 1000px) {
+    .authorSettings {
+        margin: 5px 0;
+    }
+}
+
+.authorLogout .logoutButton {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #294A70;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+
+.authorLogout .logoutButton:hover {
+    color: #f2f2f2;
+    background-color: red;
+}
+
+.authorLogout input {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.authorLogout .hide {
+    display: none;
+}

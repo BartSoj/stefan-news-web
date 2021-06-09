@@ -1,0 +1,174 @@
+.container {
+    padding: 0 10%;
+    text-align: left;
+}
+
+.card {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 20px;
+    width: calc(33% - 40px);
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card.text {
+    padding: 2px 16px;
+}
+
+.card p {
+    margin: 12px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 0;
+    }
+
+    .card {
+        width: calc(100% - 40px);
+    }
+}
+
+.authors .author {
+    margin-top: 20px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.authors .author .authorButton {
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #294A70;
+    background-color: white;
+    border: 2px solid #294A70;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+
+.authors .author .authorButton:hover {
+    color: #f2f2f2;
+    background-color: #294A70;
+}
+
+.pending {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #294A70;
+    margin: 10%;
+}
+
+.pending button {
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #294A70;
+    background-color: white;
+    border: 2px solid #294A70;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+
+.pending button:hover {
+    color: #f2f2f2;
+    background-color: #294A70;
+}
+
+.editAuthors {
+    margin: 10px 0;
+}
+
+.editAuthors .nav button {
+    margin: 2px;
+    border: 2px solid #294A70;
+    border-radius: 50px;
+    color: #294A70;
+    font-size: 16px;
+    padding: 9px 25px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.editAuthors .nav button:hover {
+    background-color: #FFAB1F;
+    color: #f2f2f2;
+    transition: all 0.3s ease 0s;
+}
+
+.editAuthors .nav .active {
+    background-color: #FFAB1F;
+    color: #f2f2f2;
+    transition-duration: 0.3s;
+}
+
+.authors-table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+.authors-table thead th {
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+}
+
+.authors-table tbody th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    font-weight: 400;
+}
+
+.authors-table .edit {
+    padding: 5px;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+}
+
+.authors-table .edit:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}
+
+.authors-table .edit-disabled {
+    padding: 5px;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px #666;
+}
+
+.error-notice {
+    font-size: 18px;
+    color: red;
+}
+
+.error-notice button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.error-notice button:hover {
+    opacity: 0.6;
+}
