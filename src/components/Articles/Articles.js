@@ -14,7 +14,7 @@ function Article(props) {
                                            onClick={() => setExpand(!expand)}>{expand ? "pokaż więcej" : "pokaż mniej"}</button>}
             <div className={"images"}>
                 {props.images && props.images.map((img, index) => <img key={index}
-                                                                       src={`${process.env.REACT_APP_UPLOADS_URL}/${img}`}
+                                                                       src={`${process.env.REACT_APP_BUCKET_URL}/${img}`}
                                                                        alt={"zdjęcie"}/>)}
             </div>
         </article>

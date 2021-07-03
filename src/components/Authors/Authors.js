@@ -6,7 +6,7 @@ import {get} from "../../utils/user"
 function Author(props) {
     return (
         <div className={"card"}>
-            {props.image && <img src={`${process.env.REACT_APP_UPLOADS_URL}/` + props.image} alt={"zdjęcie"}/>}
+            {props.image && <img src={`${process.env.REACT_APP_BUCKET_URL}/` + props.image} alt={"zdjęcie"}/>}
             <div className={"text"}>
                 <h2>{props.firstname} {props.lastname}</h2>
                 <p>{props.description}</p>

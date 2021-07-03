@@ -81,7 +81,7 @@ function AddArticles(props) {
                     </div>
                     <div className={"images"}>
                         {images && images.map((img, index) => (<div key={index} className={"image"}><img
-                            src={`${process.env.REACT_APP_UPLOADS_URL}/${img}`}
+                            src={`${process.env.REACT_APP_BUCKET_URL}/${img}`}
                             alt={"zdjęcie"}/>
                             <button className={"delete-image"} onClick={() => cancelImage(img)}><FontAwesomeIcon
                                 icon={faTrashAlt}/></button>

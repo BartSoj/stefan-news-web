@@ -76,7 +76,7 @@ function Settings() {
                                                        onChange={e => setEmail(e.target.value)}/></div>
                 <div className={"label"}>Zdjęcie:
                     <div className={"image"}><label htmlFor={"imageButton"}>
-                        <img src={image ? `${process.env.REACT_APP_UPLOADS_URL}/` + image : ""}
+                        <img src={image ? `${process.env.REACT_APP_BUCKET_URL}/` + image : ""}
                              alt={"zdjęcie"}/></label>
                         <input id={"imageButton"} type={"file"} onChange={e => addImage(e.target.files[0])}/>
                         <div className={"imageText"}>Zmień zdjęcie</div>
